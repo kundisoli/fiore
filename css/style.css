@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #33006F;
-  --secondary-color: #EE82EE;
-  --tertiary-color: #8A2BE2;
+  --primary-color: #800020;
+  --secondary-color: #EADDCA;
+  --tertiary-color: #A52A2A;
   --background-color: #f8e6f8;
   --white-color: #fff;
   --black-color: #000;
@@ -383,15 +383,15 @@ tr:nth-child(even) {
 }
 
 .button:hover {
-  background-color: var(--secondary-color);
+  background-color:var(--primary-color);
 }
 
 .prices-paragragh {
-  margin: 0 4git00px;
+  margin: 0 auto;
 }
 
 #prices-header {
-  margin: 0 600px;
+  margin: 0 auto;
   align-items: center;
   
 }
@@ -407,7 +407,9 @@ hr {
   margin-top: 10px;
   margin-left: 800px;
 }
-
+.see-more:hover{
+  background-color: var(--primary-color);
+}
 @media(max-width: 768px) {
   header {
       align-items: center;
@@ -699,7 +701,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #EE82EE;
 }
 
 textarea {
