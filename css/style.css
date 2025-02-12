@@ -3,28 +3,39 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header img {
-    width: 100px;
-    float:right;
+.logo{
+  width: 100px;
+    z-index: 2;
+    position: absolute;
+  
+    right: 20px; 
+    transform: translateY(-50%);
+
 }
 header {
     display: inline;
     
  
     padding: 10px; 
+    z-index: 1;
    
 }
 nav {
-    width: auto;
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
-    height: 10px;
+    height: 80px;
+    background-color: #33006F;
     
+
+    
+}
+main.home{
+  margin-top: 3%;
 }
 
 nav::after{
     
-        background-color: #33006F;
         color: #fff;
     
 }
@@ -610,3 +621,69 @@ textarea {
 }
 
 
+/* Gallery page */
+.galleryblock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.galleryblock div {
+  position: relative;
+}
+
+.galleryblock img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+aside h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+aside ul li a:hover {
+  color: #ff6600;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .galleryblock {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryblock {
+      grid-template-columns: 1fr;
+  }
+}
