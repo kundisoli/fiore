@@ -425,7 +425,37 @@ iframe {
     border: none;
 }
 
-/* Blog page */
+
+/*Blog page*/
+
+.Article{
+  justify-content: space-between;
+  margin: 5px 500px;
+}
+.blog-header{
+  align-items: center;
+  margin-left:90px;
+ 
+}
+
+.date{
+  text-decoration: double;
+}
+article .content {
+  line-height: 1.6;
+}
+.article-sub{
+  font-size: 1.8em;
+    color: #6d1567;
+    margin: 10px 100px;
+}
+article .content p {
+  font-size: 1.1em;
+}
+.left{
+  margin: 60px 0;
+}
+/* Gallery page */
 .blog{
   display: flex;
   justify-content: center;
@@ -501,3 +531,82 @@ iframe {
 .user-info small {
   color: #545d7a;
 }
+
+
+/* contact Us page */
+
+main.contact {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(13, 12, 12, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.contact h1,
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1em;
+  color: #333;
+ 
+  width: 150px;
+  margin-right: 20px;
+  text-align: left;
+  
+}
+#fname{
+  margin-left:65px;
+}
+
+input[type=text], input[type="email"], textarea {
+  width: 60%;
+  max-width: 500px; 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: center;
+  width: 50%;
+  max-width: 500px;
+  background-color: #8A2BE2;
+  margin-left: 200px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
