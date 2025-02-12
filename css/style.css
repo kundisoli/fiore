@@ -163,7 +163,7 @@ a:hover {
 .wonderful-gift {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  
 }
 
 .photo-card {
@@ -212,8 +212,8 @@ img.purple {
 }
 
 .wonder-ful {
-  margin-left: 700px;
-  margin-right: 500px;
+  margin-left: 400px;
+  margin-right: 400px;
   text-align: center;
   left: 200px;
   right: 200px;
